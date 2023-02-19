@@ -1,0 +1,23 @@
+==========
+Args:Namespace(dataset='datasets/eccv16_dataset_summe_google_pool5.h5', split='datasets/summe_splits.json', split_id=0, metric='summe', input_dim=1024, hidden_dim=256, num_layers=1, rnn_cell='lstm', lr=1e-05, weight_decay=1e-05, max_epoch=60, stepsize=30, gamma=0.1, num_episode=5, beta=0.01, seed=1, gpu='0', use_cpu=False, evaluate=False, save_dir='log/summe-split0', resume='', verbose=True, save_results=False)
+==========
+Currently using CPU
+Initialize dataset datasets/eccv16_dataset_summe_google_pool5.h5
+# total videos 25. # train videos 20. # test videos 5
+Initialize model
+Model size: 2.62605M
+==> Start training
+epoch 1/60	 reward 0.8870021736621858	
+epoch 2/60	 reward 0.886403365135193	
+epoch 3/60	 reward 0.888307031393051	
+epoch 4/60	 reward 0.8874881571531296	
+epoch 5/60	 reward 0.8863617449998857	
+epoch 6/60	 reward 0.8865691530704497	
+epoch 7/60	 reward 0.887608456015587	
+epoch 8/60	 reward 0.8873832005262374	
+epoch 9/60	 reward 0.8867452412843706	
+epoch 10/60	 reward 0.8871234649419785	
+epoch 11/60	 reward 0.8868787175416946	
+epoch 12/60	 reward 0.8860875582695005	
+epoch 13/60	 reward 0.8875401890277864	
+epoch 14/60	 reward 0.8866677582263947	
