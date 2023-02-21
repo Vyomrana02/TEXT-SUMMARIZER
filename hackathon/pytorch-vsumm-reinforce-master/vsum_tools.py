@@ -3,18 +3,7 @@ from knapsack import knapsack_dp
 import math
 
 def generate_summary(ypred, cps, n_frames, nfps, positions, proportion=0.30, method='knapsack'):
-    """Generate keyshot-based video summary i.e. a binary vector.
-    Args:
-    ---------------------------------------------
-    - ypred: predicted importance scores.
-    - cps: change points, 2D matrix, each row contains a segment.
-    - n_frames: original number of frames.
-    - nfps: number of frames per segment.
-    - positions: positions of subsampled frames in the original video.
-    - proportion: length of video summary (compared to original video length).
-    - method: defines how shots are selected, ['knapsack', 'rank'].
-    """
-    n_segs = cps.shape[0]
+      n_segs = cps.shape[0]
     frame_scores = np.zeros((n_frames), dtype=np.float32)
     if positions.dtype != int:
         positions = positions.astype(np.int32)
@@ -61,15 +50,7 @@ def generate_summary(ypred, cps, n_frames, nfps, positions, proportion=0.30, met
     return summary
 
 def evaluate_summary(machine_summary, user_summary, eval_metric='avg'):
-    """Compare machine summary with user summary (keyshot-based).
-    Args:
-    --------------------------------
-    machine_summary and user_summary should be binary vectors of ndarray type.
-    eval_metric = {'avg', 'max'}
-    'avg' averages results of comparing multiple human summaries.
-    'max' takes the maximum (best) out of multiple comparisons.
-    """
-    machine_summary = machine_summary.astype(np.float32)
+   machine_summary = machine_summary.astype(np.float32)
     user_summary = user_summary.astype(np.float32)
     n_users,n_frames = user_summary.shape
 
