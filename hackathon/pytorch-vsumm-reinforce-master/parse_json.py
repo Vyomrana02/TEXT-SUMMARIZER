@@ -8,13 +8,6 @@ from matplotlib import pyplot as plt
 from utils import read_json
 import numpy as np
 
-"""
-Parse json file (.json) to extract rewards for specific videos.
-
-How to use:
-# image will be saved in path: blah_blah_blah
-$ python parse_json.py -p blah_blah_blah/rewards.json -i 0
-"""
 
 # Rewards in RL are typically have a high variance,
 # so it's better to smooth them out for better analysis
