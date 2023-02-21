@@ -1,27 +1,5 @@
 import numpy as np
 
-'''
-------------------------------------------------
-Use dynamic programming (DP) to solve 0/1 knapsack problem
-Time complexity: O(nW), where n is number of items and W is capacity
-
-Author: Kaiyang Zhou
-Website: https://kaiyangzhou.github.io/
-------------------------------------------------
-knapsack_dp(values,weights,n_items,capacity,return_all=False)
-
-Input arguments:
-  1. values: a list of numbers in either int or float, specifying the values of items
-  2. weights: a list of int numbers specifying weights of items
-  3. n_items: an int number indicating number of items
-  4. capacity: an int number indicating the knapsack capacity
-  5. return_all: whether return all info, defaulty is False (optional)
-
-Return:
-  1. picks: a list of numbers storing the positions of selected items
-  2. max_val: maximum value (optional)
-------------------------------------------------
-'''
 def knapsack_dp(values,weights,n_items,capacity,return_all=False):
     check_inputs(values,weights,n_items,capacity)
 
